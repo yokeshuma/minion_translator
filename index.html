@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minion Translator</title>
+    <link rel="stylesheet" href="dist/style/base.css">
+    <link rel="stylesheet" href="dist/style/styles.css">
+
+</head>
+
+<body>
+    <header class="common-header ">
+        <h1 class=" text-center big-text-3 font-weight-bold">Minion Translator</h1>
+    </header>
+    <section class="section">
+        <div class="wrapper">
+            <h4 class="heading-3 pB-1 font-weight-medium">About The Minion Translator App</h4>
+            <ul class="common-description">
+                <li>It's a English to Minions Language Translator.</li>
+                <li>Uses API from <a href="https://funtranslations.com"
+                        class="link primary-link">funtranslations.com</a> &amp;
+                    API rate limit is 60 calls per day with distribution of 5 calls per hour</li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <section id="translation" class="section">
+            <div class="wrapper">
+                <form action="#" class="form">
+                    <div class="row">
+                        <div class="column-extra-large-5 column-large-5 column-small-12">
+                            <div class="form-column">
+                                <label for="input " class="form-label">Enter your input (in English)</label>
+                                <textarea id="input" class="form-field form-textarea" spellcheck="false"></textarea>
+                            </div>
+                        </div>
+                        <div
+                            class="column-extra-large-2 column-large-2 column-small-12 flex flex-justify-center flex-align-center">
+                            <button class="button translate-button width-100 mB-1" type="button"
+                                id="translate-button">Translate</button>
+                        </div>
+
+
+                        <div class="column-extra-large-5 column-large-5 column-small-12">
+                            <div class="form-column">
+                                <label for="translated-output" class="form-label">Translated Text (in Minion's
+                                    Language)</label>
+                                <textarea id="translated-output" class="form-field form-textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="dist/script/script.js"></script>
+</body>
+
+</html>
